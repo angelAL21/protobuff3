@@ -1,0 +1,9 @@
+syntax = "proto3"; //using proto3
+
+option go_package = "examplepb";
+
+message MyMessage{ //in protocol buffers we define messages
+    int32 id = 1;
+    string first_name = 2; //string is a field type, first_name is a field name and 2 is a field tag
+    bool is_validated = 3;
+}
